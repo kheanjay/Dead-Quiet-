@@ -3,7 +3,7 @@
 
 The Game Place runs one squad's run (1–5 players): an open scrapland map, a day/night cycle, gathering, building, crafting, the Noise meter, night waves, a boss on night 12, dawn rewards, then a teleport back to the Lobby. Lines marked BUILT are true in Studio; the rest is the INTENDED layout. Replace each line with the truth as it gets built.
 
-**Identity:** PlaceId `102971328877698` · experience GameId `10776369632` · Studio name `Place1` (to be renamed "Game"). Bootstrap check: `get_place_info` must return this PlaceId. **Status: skeleton + run flow + day/night built (B4); baseplate map, no UI, no gameplay yet.** It is currently the experience's start place; when the Lobby is added (M3), the Lobby becomes the start place.
+**Identity:** PlaceId `102971328877698` · experience GameId `10776369632` · published place name "Dead Quiet" (a start place shares the experience's name; don't rename it. `get_place_info` reports the internal name `Place1`). It gets its own name when the Lobby becomes the start place (M3). Bootstrap check: `get_place_info` must return this PlaceId. **Status: skeleton + run flow + day/night built (B4); baseplate map, no UI, no gameplay yet.** It is currently the experience's start place; when the Lobby is added (M3), the Lobby becomes the start place.
 
 ## Architecture
 - BUILT · `ServerScriptService/Main` requires the services in its `ORDER` list, then calls `:start()` on each in the same order. Services are ModuleScripts with no side effects on require. A new service = a module in `Services` + its name in `ORDER`.

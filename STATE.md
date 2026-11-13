@@ -13,6 +13,5 @@
 - **Next session id:** B5.
 
 ## Open PENDINGs
-- **PENDING (USER, Game, B2):** Rename the place `Place1` → "Game" (Asset Manager / Game Settings).
 - **PENDING (USER, Game, B4):** Studio MCP playtests capture no output (see Game CONTEXT hazards): check or update the MCP plugin, or keep pasting Output lines by hand.
 - **PENDING (USER, Game, B1):** Confirm the M1 map blockout. Default: small ~300×300-stud scrapyard, central base plot, wood + stone nodes around it.
