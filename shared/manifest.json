@@ -1,0 +1,5 @@
+{
+  "hashAlgorithm": "FNV-1a 32-bit over the UTF-8 source with every CR removed and trailing whitespace trimmed; 8 lowercase hex chars. Disk: tools/hash_disk.ps1 · Studio: tools/hash_shared.luau",
+  "comment": "One entry per shared module. 'hash' = hash of shared/src/<file>. 'deployed.<Place>' = hash last verified live in that Place (null = never deployed). Any deployed hash different from 'hash' = drift. Owner edits shared/src only; see tools/checklists.md.",
+  "modules": {}
+}

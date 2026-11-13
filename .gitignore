@@ -1,0 +1,6 @@
+# Roblox place files are canon in Studio/Roblox, not here
+*.rbxl
+*.rbxl.lock
+*.rbxlx.lock
+.DS_Store
+Thumbs.db
