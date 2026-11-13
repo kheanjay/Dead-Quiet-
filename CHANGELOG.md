@@ -3,6 +3,12 @@
 Format: "## <YYYY-MM-DD> [<Place(s)|repo>] <SessionID> -- <one-line summary>", then ≤4 short bullets: what changed · files/tools · verified vs NOT verified · what the user must do.
 Session ids are a running counter (B1, B2, ...); the next id is in STATE.md. -->
 
+## 2026-11-14 [Game] B4 -- Place skeleton, run flow, day/night
+- Studio: Main + Services (RunFlowService, DayNightService), ClientMain + Controllers (RunStateController), ReplicatedStorage/Game/Config (RunFlow, DayNight, Debug), Game/RunState attributes, empty Remotes. No UI.
+- Docs: systems/run-flow.md, day-night.md, INDEX, CONTEXT, STATE, ROADMAP.
+- Verified (1-player playtest, user-pasted Output): win path, lose path, client replication, lighting per phase, [DIAG] dev fallback. NOT verified: 2+ players. Debug flags off.
+- User: MCP playtest output capture failed (PENDING); rename Place1.
+
 ## 2026-11-13 [repo] B3 -- Final name Dead Quiet (DQ), M1 enemy Howler
 - Renamed Holdout/HO to Dead Quiet/DQ in every doc (chats now DQ-Game, DQ-UI, ...; DataStore DQ_Profiles). Old changelog entries untouched.
 - M1 enemy Scrapper replaced by Howler (blind, hunts by sound); line-up Gnawer (M2), Husk (M4), boss Matriarch Howler in pitch.md + ROADMAP.

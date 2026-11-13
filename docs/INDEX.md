@@ -29,8 +29,12 @@
 ## docs/specs/
 - `docs/specs/M1-playable-night.md` — M1 scope, acceptance criteria, session plan.
 
-## docs/blueprints/ · docs/systems/ · docs/proposals/
-- (empty) — blueprints are LAW for big systems; system docs are created when a system is built; proposals are from non-owners.
+## docs/systems/
+- `docs/systems/run-flow.md` — RunFlowService: phases, RunState attributes, server + client API, dev fallback.
+- `docs/systems/day-night.md` — DayNightService: per-phase Lighting presets and transitions.
+
+## docs/blueprints/ · docs/proposals/
+- (empty) — blueprints are LAW for big systems; proposals are from non-owners.
 
 ## shared/ · tools/ · archive/
 - `shared/manifest.json` — shared module hashes + deployed hash per Place (drift check).

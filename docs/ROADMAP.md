@@ -5,10 +5,10 @@ Milestones: **M1** Playable night · **M2** A full run · **M3** The lobby · **
 
 | Feature | Status | Owner | Notes/doc |
 |---|---|---|---|
-| Game Place skeleton (folders, Main, ClientMain, Remotes) | planned | DQ-Game | M1 · places/Game/CONTEXT.md |
+| Game Place skeleton (folders, Main, ClientMain, Remotes) | done | DQ-Game | M1 · B4 · places/Game/CONTEXT.md |
 | Map blockout (scrapyard + base plot) | planned | DQ-Game | M1 · docs/specs/M1-playable-night.md |
-| Run flow state machine (Day→Night→Dawn, win/lose) | planned | DQ-Game | M1 (1 night) → M2 (12 nights) |
-| Day/night cycle | planned | DQ-Game | M1 |
+| Run flow state machine (Day→Night→Dawn, win/lose) | partial | DQ-Game | M1 (1 night) done B4 → M2 (12 nights) · docs/systems/run-flow.md |
+| Day/night cycle | done | DQ-Game | M1 · B4 · docs/systems/day-night.md |
 | Gathering: wood + stone nodes | planned | DQ-Game | M1 |
 | Gathering: scrap nodes | planned | DQ-Game | M2 |
 | Resource inventory (wood, stone) | planned | DQ-Craft | M1 |
