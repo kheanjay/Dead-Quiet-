@@ -32,6 +32,7 @@
 ## docs/systems/
 - `docs/systems/run-flow.md` — RunFlowService: phases, RunState attributes, server + client API, dev fallback.
 - `docs/systems/day-night.md` — DayNightService: per-phase Lighting presets and transitions.
+- `docs/systems/inventory.md` — InventoryService: per-player wood/stone, server API, `inventoryChanged` remote, client cache.
 
 ## docs/blueprints/ · docs/proposals/
 - (empty) — blueprints are LAW for big systems; proposals are from non-owners.

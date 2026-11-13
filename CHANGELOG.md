@@ -3,6 +3,12 @@
 Format: "## <YYYY-MM-DD> [<Place(s)|repo>] <SessionID> -- <one-line summary>", then ≤4 short bullets: what changed · files/tools · verified vs NOT verified · what the user must do.
 Session ids are a running counter (B1, B2, ...); the next id is in STATE.md. -->
 
+## 2026-11-14 [Game] B5 -- Inventory (wood, stone)
+- Studio: InventoryService (add/remove/has/get, hasAll/removeAll, onChanged), InventoryController (client cache), Config/Items, remote inventoryChanged (owner-only), Debug.INVENTORY. One ORDER line each in Main + ClientMain (user-approved; DQ-Game's scripts).
+- Docs: systems/inventory.md, INDEX, CONTEXT, STATE, ROADMAP.
+- Verified (1-player playtest, user-pasted Output): API results, rejected calls, client cache. NOT verified: 2+ players, MAX_COUNT clamp. Debug flags off.
+- User: save the place in Studio.
+
 ## 2026-11-14 [Game] B4 -- Place skeleton, run flow, day/night
 - Studio: Main + Services (RunFlowService, DayNightService), ClientMain + Controllers (RunStateController), ReplicatedStorage/Game/Config (RunFlow, DayNight, Debug), Game/RunState attributes, empty Remotes. No UI.
 - Docs: systems/run-flow.md, day-night.md, INDEX, CONTEXT, STATE, ROADMAP.

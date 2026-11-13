@@ -11,7 +11,7 @@ Milestones: **M1** Playable night · **M2** A full run · **M3** The lobby · **
 | Day/night cycle | done | DQ-Game | M1 · B4 · docs/systems/day-night.md |
 | Gathering: wood + stone nodes | planned | DQ-Game | M1 |
 | Gathering: scrap nodes | planned | DQ-Game | M2 |
-| Resource inventory (wood, stone) | planned | DQ-Craft | M1 |
+| Resource inventory (wood, stone) | done | DQ-Craft | M1 · B5 · docs/systems/inventory.md |
 | Building: walls | planned | DQ-Game | M1 |
 | UI kit (industrial scrap panels, buttons, templates) | planned | DQ-UI | M1 |
 | HUD (resources, phase/timer, health, build) | planned | DQ-UI | M1 |
