@@ -1,7 +1,9 @@
 # CONTEXT — Game Place
-<!-- Present tense, current truth only. Architecture owner: HO-Game; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B1. -->
+<!-- Present tense, current truth only. Architecture owner: HO-Game; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B2. -->
 
-The Game Place runs one squad's run (1–5 players): an open scrapland map, a day/night cycle, gathering, building, crafting, the Noise meter, night waves, a boss on night 12, dawn rewards, then a teleport back to the Lobby. **Status: not built. The Place does not exist yet (PlaceId: TBD).** Everything below is the INTENDED layout. Replace each line with the truth as it gets built.
+The Game Place runs one squad's run (1–5 players): an open scrapland map, a day/night cycle, gathering, building, crafting, the Noise meter, night waves, a boss on night 12, dawn rewards, then a teleport back to the Lobby. Everything below is the INTENDED layout. Replace each line with the truth as it gets built.
+
+**Identity:** PlaceId `102971328877698` · experience GameId `10776369632` · Studio name `Place1` (to be renamed "Game"). Bootstrap check: `get_place_info` must return this PlaceId. **Status: Place exists, empty baseplate template; no game code yet.** It is currently the experience's start place; when the Lobby is added (M3), the Lobby becomes the start place.
 
 ## Architecture (intended)
 - One server entry script requires services in a fixed order, then calls `:start()` on each. Services are ModuleScripts with no side effects on require.
@@ -32,3 +34,4 @@ The Game Place runs one squad's run (1–5 players): an open scrapland map, a da
 - TeleportData is spoofable: rewards and currency are decided and saved by the server only.
 - Night waves + many parts on mobile: keep enemy counts and buildable part counts within the budgets set in the Waves/Building blueprints.
 - Stacked walls and floor plates: watch for z-fighting.
+- Until M3 this Place is the start place: published joins land here directly with no teleport data (same dev fallback as Studio).
