@@ -13,8 +13,8 @@ Prove the core loop is fun in the smallest slice: one squad in the Game Place ga
 - Resource inventory: wood, stone per player, server-side.
 - Building: place a wall segment on a grid inside `BasePlot` for a wood/stone cost; walls have HP.
 - Combat: player health; one basic melee weapon (scrap pipe) that hits enemies.
-- Enemy "Scrapper": melee mutant; paths toward players/base, attacks walls in the way.
-- One night wave: fixed count (tune) of Scrappers spawning from the map edge.
+- Enemy "Howler": blind melee mutant that hunts by sound (glowing Mutant-green throat sac, shriek on lock-on). In M1 it targets the nearest player, or the wall blocking its path; from M2 it is drawn to the loudest Noise source.
+- One night wave: fixed count (tune) of Howlers spawning from the map edge.
 - HUD: wood/stone counts, phase + timer, health, build button + build mode, all input types.
 
 ## Out of scope (later milestones)
@@ -27,11 +27,11 @@ Noise, crafting, scrap, loot/POIs, turrets/traps, multiple nights, boss, Lobby, 
 - `[Test]` prints show: phase changes, resource gains, wall placement, enemy spawns/deaths, win/lose. Debug flags off at landing.
 
 ## Session plan (one task per session; adjust in a proposal if needed)
-1. **HO-Game** — Place skeleton + RunFlowService + DayNightService (short test timings); system docs run-flow.md, day-night.md.
-2. **HO-Craft** — InventoryService (wood, stone; server API: add/remove/has, change event to client).
-3. **HO-UI** — UI kit basics + HUD (resources, phase/timer, health) + InputController (KB/M, gamepad, touch).
-4. **HO-Game** — Map blockout + GatherService (nodes, respawn).
-5. **HO-Game** — BuildService (wall grid placement, cost, HP) + HO-UI build button hookup via proposal/PENDING.
-6. **HO-Combat** — HealthService + CombatService (scrap pipe melee).
-7. **HO-Game** — EnemyService + WaveService (Scrapper, one night) + win/lose wiring.
-8. **HO-Game** — M1 playtest pass across devices; flip ROADMAP rows; M2 blueprint planning.
+1. **DQ-Game** — Place skeleton + RunFlowService + DayNightService (short test timings); system docs run-flow.md, day-night.md.
+2. **DQ-Craft** — InventoryService (wood, stone; server API: add/remove/has, change event to client).
+3. **DQ-UI** — UI kit basics + HUD (resources, phase/timer, health) + InputController (KB/M, gamepad, touch).
+4. **DQ-Game** — Map blockout + GatherService (nodes, respawn).
+5. **DQ-Game** — BuildService (wall grid placement, cost, HP) + DQ-UI build button hookup via proposal/PENDING.
+6. **DQ-Combat** — HealthService + CombatService (scrap pipe melee).
+7. **DQ-Game** — EnemyService + WaveService (Howler, one night) + win/lose wiring.
+8. **DQ-Game** — M1 playtest pass across devices; flip ROADMAP rows; M2 blueprint planning.

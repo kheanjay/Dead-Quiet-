@@ -1,13 +1,13 @@
 # CONTEXT — Lobby Place
-<!-- Present tense, current truth only. Architecture owner: HO-Lobby; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B1. -->
+<!-- Present tense, current truth only. Architecture owner: DQ-Lobby; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B1. -->
 
 The Lobby is the start place of the experience. Players load their save, spend meta-currency in the meta shop, pick a loadout, form a squad of 1–5, and teleport together to a reserved Game server. Players return here after a run. **Status: not built. The Place does not exist yet (PlaceId: TBD). Planned for M3.** Everything below is the INTENDED layout. Replace each line with the truth as it gets built.
 
 ## Architecture (intended)
 - One server entry script requires services in a fixed order, then calls `:start()` on each.
-- `DataService` (HO-Data) loads/saves the player profile through the shared `SaveSchema` module (save-schema contract), with session locking and migrations.
-- `ShopService` + `LoadoutService` (HO-Lobby) spend currency and set the loadout; the server validates every purchase.
-- `SquadService` (HO-Lobby) forms squads (party pads or invite), then `TeleportService:ReserveServer` + `TeleportAsync` to the Game place with teleport-payload v1 built by the shared `TeleportPayload` module.
+- `DataService` (DQ-Data) loads/saves the player profile through the shared `SaveSchema` module (save-schema contract), with session locking and migrations.
+- `ShopService` + `LoadoutService` (DQ-Lobby) spend currency and set the loadout; the server validates every purchase.
+- `SquadService` (DQ-Lobby) forms squads (party pads or invite), then `TeleportService:ReserveServer` + `TeleportAsync` to the Game place with teleport-payload v1 built by the shared `TeleportPayload` module.
 - Client: one entry LocalScript requires controllers (shop, loadout, squad UI). UI is authored ScreenGuis.
 
 ## Where things live (intended)

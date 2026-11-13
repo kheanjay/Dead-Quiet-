@@ -3,7 +3,7 @@
 - **Status:** accepted · **Date:** 2026-11-13 · **Session:** B1
 
 ## Context
-Holdout is built by several AI chats (Claude, GPT/Codex, others) plus the user, across two Roblox Places (Lobby, Game). Chats have no shared memory and limited reading budgets. Roblox Studio holds live scripts inside place files, which git cannot diff directly, and we are not using a file-sync tool (e.g. Rojo) for now. Some code (save schema, teleport payload) must be identical in both Places, and silent divergence would corrupt saves or break teleports.
+Dead Quiet is built by several AI chats (Claude, GPT/Codex, others) plus the user, across two Roblox Places (Lobby, Game). Chats have no shared memory and limited reading budgets. Roblox Studio holds live scripts inside place files, which git cannot diff directly, and we are not using a file-sync tool (e.g. Rojo) for now. Some code (save schema, teleport payload) must be identical in both Places, and silent divergence would corrupt saves or break teleports.
 
 ## Decision
 - **The repo (disk) is canon for:** knowledge (constitution, STATE, CONTEXT, system docs, blueprints, decisions), cross-Place contracts (`docs/contracts/`), and code shared by 2+ Places (`shared/src/`, tracked in `shared/manifest.json` with hashes).

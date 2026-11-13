@@ -1,7 +1,7 @@
-# Pitch — Holdout (working title)
+# Pitch — Dead Quiet
 
 ## One paragraph
-The world ended in rust. Holdout is a co-op (1–5) open-world wave survival game in a post-apocalyptic scrapland. By day your squad roams the wasteland: chopping dead trees, quarrying stone, stripping scrap, looting wrecks and bunkers, crafting gear, and fortifying a base. By night the mutants come, hunting by sound, and the walls, turrets and traps you built fight alongside you. Survive 12 nights and kill the night-12 boss to win; every run earns meta-currency for permanent unlocks back in the Lobby.
+The world ended in rust. Dead Quiet is a co-op (1–5) open-world wave survival game in a post-apocalyptic scrapland. By day your squad roams the wasteland: chopping dead trees, quarrying stone, stripping scrap, looting wrecks and bunkers, crafting gear, and fortifying a base. By night the mutants come, hunting by sound, and the walls, turrets and traps you built fight alongside you. Survive 12 nights and kill the night-12 boss to win; every run earns meta-currency for permanent unlocks back in the Lobby.
 
 ## The twist
 - **Noise.** Everything loud fills a shared squad Noise meter: chopping, quarrying, breaking loot crates, crafting at a bench, building, gunfire. At dusk the meter sets that night's wave size and mix, and it also multiplies the loot that drops at dawn. Every day becomes a squad decision: play quiet and safe, or loud and greedy. Quiet tools, silencers and muffled workbenches become craftable goals. The meter resets each dawn (some upgrades lower the floor).
@@ -25,3 +25,9 @@ Wood, stone, scrap (gathered) · salvage parts (from enemies) · loot (weapons, 
 
 ## Audience & platforms
 Roblox players 10+; PC main, console and mobile from day one. Short sessions must feel complete (one night is a satisfying chunk).
+
+## Enemies (planned line-up)
+- **Howler** (M1): blind, eyeless mutant that hunts by sound. Glowing Mutant-green throat sac pulses; shrieks when it locks on. The face of the game: it explains Noise in one creature.
+- **Gnawer** (M2): small, fast swarm mutant that chews through walls; makes building matter.
+- **Husk** (M4): slow, scrap-armoured mutant; drops salvage plates (Salvage war).
+- **Matriarch Howler** (night-12 boss, M2): giant Howler; her shriek summons Howlers and stuns players.

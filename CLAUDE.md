@@ -1,10 +1,10 @@
-# CLAUDE.md — Holdout (working title) · code HO
+# CLAUDE.md — Dead Quiet · code DQ
 <!-- CONSTITUTION: rules + rituals. Read first, every session. Budget ≤12,000 chars (wc -m). AGENTS.md mirrors this file for non-Claude AIs: edit both in the same commit. -->
 
-Holdout: co-op (1–5) open-world wave survival in a post-apocalyptic scrapland. Roblox Studio, Luau `--!strict`. PC main + console + mobile. Two Places: **Lobby** and **Game**. Pitch: `docs/design/pitch.md`. Map of all docs: `docs/INDEX.md`.
+Dead Quiet: co-op (1–5) open-world wave survival in a post-apocalyptic scrapland. Roblox Studio, Luau `--!strict`. PC main + console + mobile. Two Places: **Lobby** and **Game**. Pitch: `docs/design/pitch.md`. Map of all docs: `docs/INDEX.md`.
 
 ## 1. Identity & binding
-- A chat binds to a SYSTEM, not a file. Names: `HO-<System>`: HO-Game, HO-Combat, HO-Craft, HO-UI, HO-Lobby, HO-Data, HO-Integration (cross-Place work only). Who owns what: `docs/OWNERSHIP.md`.
+- A chat binds to a SYSTEM, not a file. Names: `DQ-<System>`: DQ-Game, DQ-Combat, DQ-Craft, DQ-UI, DQ-Lobby, DQ-Data, DQ-Integration (cross-Place work only). Who owns what: `docs/OWNERSHIP.md`.
 - At bootstrap, before any write, confirm which Place the open Studio instance is (Roblox Studio MCP `get_place_info`: name + PlaceId vs `places/<Place>/CONTEXT.md`). Needed Place not open, or unclear → ask the user. Never work on the wrong Place.
 - Don't know which system you are? Ask the user before reading further.
 
@@ -73,7 +73,7 @@ Holdout: co-op (1–5) open-world wave survival in a post-apocalyptic scrapland.
 - `docs/specs/*` are intent, not law; a big system gets a blueprint before it is built.
 
 ## 9. Contract-change protocol (`docs/contracts/`)
-Owner only (HO-Data) → bump the integer version + add a migration (never edit old migrations) → deploy + verify in the owner's Place → `PENDING: <other Place> must deploy <module> vN` → the consumer deploys and deletes the PENDING at its next bootstrap.
+Owner only (DQ-Data) → bump the integer version + add a migration (never edit old migrations) → deploy + verify in the owner's Place → `PENDING: <other Place> must deploy <module> vN` → the consumer deploys and deletes the PENDING at its next bootstrap.
 
 ## 10. Doc budgets (characters, `wc -m`)
 CLAUDE.md / AGENTS.md ≤12k · STATE.md ≤6k · each CONTEXT.md ≤6k · changelog entry ≤600 · `docs/systems/*` ≤300 lines.

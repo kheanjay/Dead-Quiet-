@@ -1,10 +1,10 @@
 # Contract — Player save schema
-- **Version:** 0 (DRAFT, not deployed) · **Owner:** HO-Data · **Consumers:** Lobby (read/write), Game (writes run rewards)
+- **Version:** 0 (DRAFT, not deployed) · **Owner:** DQ-Data · **Consumers:** Lobby (read/write), Game (writes run rewards)
 - **Module:** `shared/src/SaveSchema.luau` → `ReplicatedStorage/Shared/SaveSchema` (not created yet)
-- Becomes v1 when HO-Data first deploys it (M3). After that: never change shapes without bumping the version + adding a migration.
+- Becomes v1 when DQ-Data first deploys it (M3). After that: never change shapes without bumping the version + adding a migration.
 
 ## DataStore
-- Store name: `HO_Profiles` (Studio: `HO_Profiles_TEST`) · Key: `u_<UserId>`
+- Store name: `DQ_Profiles` (Studio: `DQ_Profiles_TEST`) · Key: `u_<UserId>`
 - Session-locked (one server writes a profile at a time).
 
 ## Draft shape (Luau type)

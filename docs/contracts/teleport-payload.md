@@ -1,5 +1,5 @@
 # Contract — Teleport payload (Lobby ↔ Game)
-- **Version:** 0 (DRAFT, not deployed) · **Owner:** HO-Data (shape) · **Producers/consumers:** HO-Lobby (Lobby→Game), HO-Game (reads; Game→Lobby)
+- **Version:** 0 (DRAFT, not deployed) · **Owner:** DQ-Data (shape) · **Producers/consumers:** DQ-Lobby (Lobby→Game), DQ-Game (reads; Game→Lobby)
 - **Module:** `shared/src/TeleportPayload.luau` → `ReplicatedStorage/Shared/TeleportPayload` (build + validate functions; not created yet)
 - Becomes v1 when first deployed (M3).
 

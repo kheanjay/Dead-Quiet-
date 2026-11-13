@@ -1,5 +1,5 @@
 # CONTEXT — Game Place
-<!-- Present tense, current truth only. Architecture owner: HO-Game; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B2. -->
+<!-- Present tense, current truth only. Architecture owner: DQ-Game; each system owner keeps its own lines true. Budget ≤6,000 chars (wc -m). Last verified: 2026-11-13, B2. -->
 
 The Game Place runs one squad's run (1–5 players): an open scrapland map, a day/night cycle, gathering, building, crafting, the Noise meter, night waves, a boss on night 12, dawn rewards, then a teleport back to the Lobby. Everything below is the INTENDED layout. Replace each line with the truth as it gets built.
 
@@ -7,9 +7,9 @@ The Game Place runs one squad's run (1–5 players): an open scrapland map, a da
 
 ## Architecture (intended)
 - One server entry script requires services in a fixed order, then calls `:start()` on each. Services are ModuleScripts with no side effects on require.
-- `RunFlowService` (HO-Game) is the state machine: `Lobby wait → Day → Dusk → Night → Dawn → … → night 12 boss → End`. It publishes the phase and night number; other services react to it.
+- `RunFlowService` (DQ-Game) is the state machine: `Lobby wait → Day → Dusk → Night → Dawn → … → night 12 boss → End`. It publishes the phase and night number; other services react to it.
 - `DayNightService` drives Lighting from the phase. `NoiseService` keeps the shared squad Noise meter (server-side), feeding `WaveService` (wave size/mix) and `RewardService` (dawn loot).
-- `GatherService`, `BuildService`, `TurretService` (HO-Game); `InventoryService`, `CraftService`, `LootService`, `SalvageService` (HO-Craft); `CombatService`, `HealthService` (HO-Combat); `EnemyService` + `WaveService` (HO-Game).
+- `GatherService`, `BuildService`, `TurretService` (DQ-Game); `InventoryService`, `CraftService`, `LootService`, `SalvageService` (DQ-Craft); `CombatService`, `HealthService` (DQ-Combat); `EnemyService` + `WaveService` (DQ-Game).
 - At run end, `RewardService` writes meta-currency to the save via the shared `SaveSchema` module (server-side), then teleports the squad to the Lobby.
 - Client: one entry LocalScript requires controllers (input, HUD binding, build placement preview). UI is authored ScreenGuis; controllers only set values/visibility.
 

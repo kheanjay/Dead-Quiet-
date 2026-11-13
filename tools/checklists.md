@@ -5,7 +5,7 @@
 - `wc -l <file>` first. Over ~200 lines → `grep -n '<term>' <file>`, then `sed -n '<a>,<b>p' <file>` around the hit.
 - Studio scripts: use MCP `grep_scripts` / `get_script_source` with a line range, not whole-place dumps.
 - CHANGELOG newest 3: `grep -n '^## ' CHANGELOG.md | head -4`, then `sed -n '1,<4th−1>p' CHANGELOG.md`.
-- ROADMAP: `grep -n 'HO-<System>' docs/ROADMAP.md`. Archive: `grep -n '<term>' archive/*.md` only.
+- ROADMAP: `grep -n 'DQ-<System>' docs/ROADMAP.md`. Archive: `grep -n '<term>' archive/*.md` only.
 
 ## Drift
 1. In Studio: run `tools/hash_shared.luau` (MCP `execute_luau`). On disk: `powershell -ExecutionPolicy Bypass -File tools/hash_disk.ps1`.
@@ -19,14 +19,14 @@
 - A contract or shared-module change is committed but not deployed/verified in every consuming Place.
 - The task spans both Places (e.g. teleport, rewards → save → lobby display).
 
-## Deploying a shared module (HO-Integration or the owner)
+## Deploying a shared module (DQ-Integration or the owner)
 1. Confirm the Place (`get_place_info`). Edit mode, no playtest running.
 2. Create/replace the ModuleScript at the manifest `deployPath` with the exact contents of `shared/src/<file>`.
 3. Run `tools/hash_shared.luau`; the hash must equal manifest `hash`.
 4. Set `deployed.<Place>` to that hash; delete the matching PENDING; CHANGELOG + commit.
 
 ## Editing a shared module (owner only)
-1. Announce: add a PENDING "HO-<owner> editing <module>" so no one else starts.
+1. Announce: add a PENDING "DQ-<owner> editing <module>" so no one else starts.
 2. Edit `shared/src/<file>` on disk (whole file or exact diff). If it changes a contract, follow the contract-change protocol (CLAUDE.md §9).
 3. `tools/hash_disk.ps1` → update manifest `hash`; deploy + verify in the owner's Place; update `deployed.<Place>`.
 4. PENDING: "<other Place> must deploy <module> (hash <h>)". Land.

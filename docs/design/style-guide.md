@@ -1,5 +1,5 @@
 # Style guide — art, UI, sound
-<!-- Owner: HO-UI (UI + sound sections), HO-Game (world art). Colour tokens are starting values; the user may retune them in Studio — ask before "correcting" anything that looks different. -->
+<!-- Owner: DQ-UI (UI + sound sections), DQ-Game (world art). Colour tokens are starting values; the user may retune them in Studio — ask before "correcting" anything that looks different. -->
 
 ## Colour tokens
 | Token | Hex | Use |

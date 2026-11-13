@@ -16,7 +16,7 @@
 - `docs/ROADMAP.md` — feature status board (grep, don't read whole).
 
 ## docs/design/
-- `docs/design/pitch.md` — pitch, core loop, twist (Noise + Salvage), run structure, inspirations.
+- `docs/design/pitch.md` — pitch, core loop, twist (Noise + Salvage), run structure, enemies, inspirations.
 - `docs/design/style-guide.md` — art, UI, sound palette, colour tokens.
 
 ## docs/decisions/
