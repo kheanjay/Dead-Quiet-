@@ -3,6 +3,12 @@
 Format: "## <YYYY-MM-DD> [<Place(s)|repo>] <SessionID> -- <one-line summary>", then ≤4 short bullets: what changed · files/tools · verified vs NOT verified · what the user must do.
 Session ids are a running counter (B1, B2, ...); the next id is in STATE.md. -->
 
+## 2026-11-14 [Game] B6 -- HUD + InputController
+- Studio: StarterGui/HudGui (resources, phase/timer/night, health bar, touch buttons), HudController, InputController (attack/interact/build), Config/Input, Debug.HUD. Two ORDER lines in ClientMain (user-approved).
+- Docs: systems/hud-input.md, INDEX, CONTEXT, STATE, ROADMAP.
+- Verified (1-player, user-pasted Output): counts, phase text to Night, E/B via CAS. NOT: click, gamepad, touch, End text, 2+ players. Flags off.
+- User: save the place; test gamepad + phone emulation.
+
 ## 2026-11-14 [Game] B5 -- Inventory (wood, stone)
 - Studio: InventoryService (add/remove/has/get, hasAll/removeAll, onChanged), InventoryController (client cache), Config/Items, remote inventoryChanged (owner-only), Debug.INVENTORY. One ORDER line each in Main + ClientMain (user-approved; DQ-Game's scripts).
 - Docs: systems/inventory.md, INDEX, CONTEXT, STATE, ROADMAP.

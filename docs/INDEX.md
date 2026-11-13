@@ -33,6 +33,7 @@
 - `docs/systems/run-flow.md` — RunFlowService: phases, RunState attributes, server + client API, dev fallback.
 - `docs/systems/day-night.md` — DayNightService: per-phase Lighting presets and transitions.
 - `docs/systems/inventory.md` — InventoryService: per-player wood/stone, server API, `inventoryChanged` remote, client cache.
+- `docs/systems/hud-input.md` — HudGui (resources, phase/timer, health) + HudController; InputController actions (KB/M, gamepad, touch), Config/Input.
 
 ## docs/blueprints/ · docs/proposals/
 - (empty) — blueprints are LAW for big systems; proposals are from non-owners.

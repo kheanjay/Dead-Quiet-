@@ -13,9 +13,9 @@ Milestones: **M1** Playable night · **M2** A full run · **M3** The lobby · **
 | Gathering: scrap nodes | planned | DQ-Game | M2 |
 | Resource inventory (wood, stone) | done | DQ-Craft | M1 · B5 · docs/systems/inventory.md |
 | Building: walls | planned | DQ-Game | M1 |
-| UI kit (industrial scrap panels, buttons, templates) | planned | DQ-UI | M1 |
-| HUD (resources, phase/timer, health, build) | planned | DQ-UI | M1 |
-| Cross-platform input (KB/M, gamepad, touch) | planned | DQ-UI | M1 |
+| UI kit (industrial scrap panels, buttons, templates) | partial | DQ-UI | M1 · B6 panel kit in HudGui; menus later · docs/systems/hud-input.md |
+| HUD (resources, phase/timer, health, build) | partial | DQ-UI | M1 · B6 resources + phase/timer; health unbound (S6), build hookup (S5) · docs/systems/hud-input.md |
+| Cross-platform input (KB/M, gamepad, touch) | partial | DQ-UI | M1 · B6 attack/interact/build; KB verified, gamepad + touch not yet · docs/systems/hud-input.md |
 | Player health + basic melee weapon | planned | DQ-Combat | M1 |
 | Enemy: Howler (blind melee mutant, hunts by sound) | planned | DQ-Game | M1 · docs/design/pitch.md §Enemies |
 | Night wave (single enemy type) | planned | DQ-Game | M1 |
